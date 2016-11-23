@@ -1,0 +1,34 @@
+@import "../1-tools/bourbon/bourbon"
+@import "../1-tools/mixins"
+@import "../1-tools/_vars"
+@import "../1-tools/_normalize"
+
+
+.new
+  +background('photo-1422022098106-b3a9edc463af.jpg')
+  background-attachment: fixed
+  min-height: 50vh
+  padding: 3% 0%
+  box-sizing: border-box
+  color: white
+  .tile
+    background-color: $primary_color_light
+    opacity: .9
+    width: 90%
+    height: 100%
+    padding: 5%
+    margin: 0 auto
+
+
+    box-sizing: border-box
+    h1
+      margin: 0 0 25px 0
+    p
+      font:
+        size: 2rem
+      text-align: justify
+
+    a
+      color: $secondary_color
+      font:
+        size: 2rem

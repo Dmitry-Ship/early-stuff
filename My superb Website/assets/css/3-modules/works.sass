@@ -1,0 +1,33 @@
+@import "../1-tools/bourbon/bourbon"
+@import "../1-tools/mixins"
+@import "../1-tools/_vars"
+@import "../1-tools/_normalize"
+
+.works
+  .first
+    +background('293-nasa-moon-landing.jpg')
+    height: 100vh
+  .description
+    text-transform: uppercase
+    padding: 7%
+    box-sizing: border-box
+    h1
+      font:
+        size: 8rem
+        weight: bold
+        family: Heebo
+      color: $primary_color
+    h3
+      font:
+        size: 5rem
+        weight: bold
+      color: $primary_color_light
+      margin-bottom: 30px
+    .btn-default
+      font:
+        size: 3rem
+      color: $secondary_color
+      border: 3px solid $primary_color
+      padding: 10px
+      .fa
+        margin: auto 10px

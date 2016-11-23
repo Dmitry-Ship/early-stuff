@@ -1,0 +1,97 @@
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.parralax-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/photo-1451188214936-ec16af5ca155.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  color: white;
+  text-align: center;
+  position: relative; }
+
+.sticky {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #587ca0;
+  opacity: 0;
+  z-index: 1; }
+  .sticky.is-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -50px;
+  height: 100px;
+  z-index: 2;
+  transition: left 300ms ease-in-out; }
+  .logo.is-shifted {
+    left: 20%; }
+    .logo.is-shifted h1 {
+      font-size: 4rem;
+      color: #e74c3c; }
+      .logo.is-shifted h1 span {
+        font-size: 0.1rem;
+        opacity: 0; }
+  .logo h1 {
+    font-family: Ultra;
+    font-size: 5rem;
+    transition: font-size 300ms ease-in-out, color 300ms ease-in-out 900ms; }
+    .logo h1 span {
+      transition: all 600ms ease-in-out 300ms; }
+  .logo p {
+    font-family: Lobster;
+    font-size: 3rem; }
+  .logo.is-logo {
+    position: fixed;
+    top: 0;
+    line-height: 80px;
+    margin-top: 0px; }
+
+ul {
+  list-style-type: none;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  right: 0;
+  width: 40%;
+  font-family: Poppins;
+  font-size: 2.2rem;
+  z-index: 1; }
+  ul li {
+    line-height: 80px;
+    position: relative; }
+    ul li::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0%;
+      background-color: #e74c3c;
+      height: 5px;
+      width: 0%;
+      transition: all 300ms ease-in-out; }
+    ul li:hover::after {
+      width: 100%; }
+    ul li:hover a {
+      color: #e74c3c;
+      text-decoration: none; }
+    ul li a {
+      text-decoration: none;
+      color: inherit; }
+
+/*# sourceMappingURL=header.css.map */

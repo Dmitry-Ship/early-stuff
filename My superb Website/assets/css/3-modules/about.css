@@ -1,0 +1,32 @@
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.about {
+  min-height: 60vh;
+  padding: 0.4px; }
+  .about h2 {
+    font-size: 4rem;
+    margin-top: 100px;
+    text-align: center;
+    color: #34495e; }
+  .about hr {
+    width: 10%;
+    height: 4px;
+    margin-bottom: 50px;
+    background-color: #34495e; }
+  .about .text-center {
+    margin-bottom: 100px; }
+  .about .fa {
+    color: #e74c3c;
+    font-size: 5rem;
+    margin-bottom: 50px; }
+
+.text h4 {
+  color: #34495e;
+  font-size: 2.2rem; }
+.text p {
+  color: #587ca0;
+  letter-spacing: 1px; }
+
+/*# sourceMappingURL=about.css.map */

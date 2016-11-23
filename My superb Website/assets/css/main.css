@@ -1,0 +1,193 @@
+body {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.parralax-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/photo-1451188214936-ec16af5ca155.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  color: white;
+  text-align: center;
+  position: relative; }
+
+.sticky {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #587ca0;
+  opacity: 0;
+  z-index: 1; }
+  .sticky.is-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -50px;
+  height: 100px;
+  z-index: 2;
+  transition: left 300ms ease-in-out; }
+  .logo.is-shifted {
+    left: 20%; }
+    .logo.is-shifted h1 {
+      font-size: 4rem;
+      color: #e74c3c; }
+      .logo.is-shifted h1 span {
+        font-size: 0.1rem;
+        opacity: 0; }
+  .logo h1 {
+    font-family: Ultra;
+    font-size: 5rem;
+    transition: font-size 300ms ease-in-out, color 300ms ease-in-out 900ms; }
+    .logo h1 span {
+      transition: all 600ms ease-in-out 300ms; }
+  .logo p {
+    font-family: Lobster;
+    font-size: 3rem; }
+  .logo.is-logo {
+    position: fixed;
+    top: 0;
+    line-height: 80px;
+    margin-top: 0px; }
+
+ul {
+  list-style-type: none;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  right: 0;
+  width: 40%;
+  font-family: Poppins;
+  font-size: 2.2rem;
+  z-index: 1; }
+  ul li {
+    line-height: 80px;
+    position: relative; }
+    ul li::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0%;
+      background-color: #e74c3c;
+      height: 5px;
+      width: 0%;
+      transition: all 300ms ease-in-out; }
+    ul li:hover::after {
+      width: 100%; }
+    ul li:hover a {
+      color: #e74c3c;
+      text-decoration: none; }
+    ul li a {
+      text-decoration: none;
+      color: inherit; }
+
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.about {
+  min-height: 60vh;
+  padding: 0.4px; }
+  .about h2 {
+    font-size: 4rem;
+    margin-top: 100px;
+    text-align: center;
+    color: #34495e; }
+  .about hr {
+    width: 10%;
+    height: 4px;
+    margin-bottom: 50px;
+    background-color: #34495e; }
+  .about .text-center {
+    margin-bottom: 100px; }
+  .about .fa {
+    color: #e74c3c;
+    font-size: 5rem;
+    margin-bottom: 50px; }
+
+.text h4 {
+  color: #34495e;
+  font-size: 2.2rem; }
+.text p {
+  color: #587ca0;
+  letter-spacing: 1px; }
+
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.works .first {
+  background-image: linear-gradient(transparent, transparent), url("../img/293-nasa-moon-landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+.works .description {
+  text-transform: uppercase;
+  padding: 7%;
+  box-sizing: border-box; }
+  .works .description h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: Heebo;
+    color: #34495e; }
+  .works .description h3 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #587ca0;
+    margin-bottom: 30px; }
+  .works .description .btn-default {
+    font-size: 3rem;
+    color: #e74c3c;
+    border: 3px solid #34495e;
+    padding: 10px; }
+    .works .description .btn-default .fa {
+      margin: auto 10px; }
+
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.new {
+  background-image: linear-gradient(transparent, transparent), url("../img/photo-1422022098106-b3a9edc463af.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 50vh;
+  padding: 3% 0%;
+  box-sizing: border-box;
+  color: white; }
+  .new .tile {
+    background-color: #587ca0;
+    opacity: 0.9;
+    width: 90%;
+    height: 100%;
+    padding: 5%;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    .new .tile h1 {
+      margin: 0 0 25px 0; }
+    .new .tile p {
+      font-size: 2rem;
+      text-align: justify; }
+    .new .tile a {
+      color: #e74c3c;
+      font-size: 2rem; }
+
+/*# sourceMappingURL=main.css.map */

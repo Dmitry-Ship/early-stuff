@@ -1,0 +1,32 @@
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.works .first {
+  background-image: linear-gradient(transparent, transparent), url("../img/293-nasa-moon-landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+.works .description {
+  text-transform: uppercase;
+  padding: 7%;
+  box-sizing: border-box; }
+  .works .description h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: Heebo;
+    color: #34495e; }
+  .works .description h3 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #587ca0;
+    margin-bottom: 30px; }
+  .works .description .btn-default {
+    font-size: 3rem;
+    color: #e74c3c;
+    border: 3px solid #34495e;
+    padding: 10px; }
+    .works .description .btn-default .fa {
+      margin: auto 10px; }
+
+/*# sourceMappingURL=works.css.map */

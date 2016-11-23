@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  padding: 0px; }
+
+.container {
+  padding: 2px;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  background-color: #34495e; }
+  .container h1 {
+    color: #16a085;
+    font-family: Mf Hello Heartache;
+    text-align: center;
+    font-size: 4rem;
+    margin: 60px; }
+
+.slider {
+  width: 900px;
+  overflow: hidden;
+  margin: auto;
+  height: 600px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
+
+.slides {
+  list-style-type: none;
+  height: 600px;
+  width: 6000px;
+  display: block;
+  padding: 0px;
+  margin: 0px; }
+
+.slide {
+  float: left;
+  height: 600px;
+  width: 900px; }
+  .slide img {
+    width: 900px;
+    height: 600px; }
+
+/*# sourceMappingURL=template.css.map */

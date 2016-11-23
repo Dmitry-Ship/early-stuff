@@ -1,0 +1,31 @@
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.new {
+  background-image: linear-gradient(transparent, transparent), url("../img/photo-1422022098106-b3a9edc463af.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 50vh;
+  padding: 3% 0%;
+  box-sizing: border-box;
+  color: white; }
+  .new .tile {
+    background-color: #587ca0;
+    opacity: 0.9;
+    width: 90%;
+    height: 100%;
+    padding: 5%;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    .new .tile h1 {
+      margin: 0 0 25px 0; }
+    .new .tile p {
+      font-size: 2rem;
+      text-align: justify; }
+    .new .tile a {
+      color: #e74c3c;
+      font-size: 2rem; }
+
+/*# sourceMappingURL=new.css.map */

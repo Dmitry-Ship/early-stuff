@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+  head
+    title template
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='template.css', media='screen')
+    
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    
+    link(href='https://fonts.googleapis.com/css?family=Indie+Flower|Raleway:400,500,600,700', rel='stylesheet')
+    
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    script(src='template.js')
+    
+  body
+    .modal-wrap
+     .modal-header
+       span.is-active
+       span
+       span
+      
+      .modal-bodies
+        .modal-body.modal-body-step-1.is-showing
+          .title Step 1
+          .description Hello there, let`s play a game.
+          from
+            input(type='text' placeholder='Name')
+            input(type='email' placeholder='Email')
+            .text-center
+              button(type="button") Start
+        
+        
+        .modal-body.modal-body-step-2
+          .title Step 2
+          .description Would you rather
+          from
+            label
+              input(type='radio' name='radio') 
+              |live one life, that lasts 100 years
+            label
+              input(type='radio' name='radio' id='radio-2') 
+              |live 10 lifes, that last 10 years each
+            .text-center.fade-in
+              button(type="button") Next
+      
+        .modal-body.modal-body-step-3
+          .title Step 3
+          .description Check your email inbox for the results.
+
+
+  
+  
+        
+      
+      
+    
+        
+        
+        
+  

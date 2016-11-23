@@ -1,0 +1,345 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins; }
+
+.parralax-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("C:/Users/Dmitry/OneDrive/Photos/stock/photo-1416431168657-a6c4184348ab small.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  padding: 0px; }
+
+.original {
+  font-size: 1.5rem;
+  position: fixed;
+  width: 40%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  list-style-type: none;
+  margin: 0 30px 0 0;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .original a {
+    text-decoration: none;
+    color: white; }
+    .original a li {
+      position: relative;
+      line-height: 80px; }
+      .original a li::after {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        height: 4px;
+        background-color: white;
+        width: 0;
+        transition: all 300ms ease-in-out; }
+      .original a li:hover::after {
+        width: 100%; }
+
+.logo {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  margin-top: -50px;
+  font-family: Raleway;
+  font-size: 4rem;
+  z-index: 1;
+  height: 100px;
+  line-height: 44px;
+  padding: 20px;
+  transition: left 300ms ease-in-out, font-size 300ms ease-in-out, line-height 300ms ease-in-out;
+  box-sizing: border-box;
+  border: 8px solid white; }
+  .logo.is-minimized {
+    left: 15%;
+    font-size: 2rem; }
+  .logo.in-menu {
+    line-height: 80px;
+    height: 80px;
+    line-height: 24px;
+    margin-top: 0;
+    position: fixed;
+    top: 0%; }
+
+.sticky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  background-color: #26A69A; }
+  .sticky.is-sticky {
+    position: fixed;
+    height: 80px;
+    z-index: 1;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); }
+
+.awesomeness {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  color: #186860; }
+  .awesomeness .question {
+    text-align: center;
+    flex-grow: 1;
+    margin-top: 80px; }
+    .awesomeness .question h2 {
+      position: relative;
+      font-size: 2.5rem; }
+      .awesomeness .question h2::after {
+        content: "";
+        width: 5%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0%;
+        height: 3px;
+        background-color: #83e3da; }
+  .awesomeness .answers {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    font-family: Lato; }
+    .awesomeness .answers .answer {
+      min-width: 300px;
+      width: 300px;
+      text-align: center;
+      margin: 0 40px;
+      font-size: 1.5rem; }
+      .awesomeness .answers .answer .material-icons {
+        font-size: 48px;
+        color: #e67e22; }
+      .awesomeness .answers .answer p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: #30d0c1; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 150vh;
+  width: 100%; }
+  .gallery .picture {
+    min-width: 33.33%;
+    min-height: 33.33%;
+    cursor: pointer;
+    position: relative;
+    text-align: center; }
+    .gallery .picture .cover {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      background-color: transparent;
+      transition: all 300ms ease-in-out; }
+    .gallery .picture p {
+      color: white;
+      font-size: 2rem;
+      display: block;
+      opacity: 0;
+      margin-top: 90%;
+      transition: all 300ms ease-in-out; }
+    .gallery .picture:hover .cover {
+      background-color: rgba(0, 0, 0, 0.5); }
+      .gallery .picture:hover .cover p {
+        opacity: 1;
+        margin-top: 40%; }
+  .gallery .number-1 {
+    background-image: linear-gradient(transparent, transparent), url("C:/Users/Dmitry/OneDrive/Photos/stock/52af24879b3cb_1.JPG");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery .number-2 {
+    background-image: linear-gradient(transparent, transparent), url("C:/Users/Dmitry/OneDrive/Photos/stock/HHEvkhEsQLaNDRkui4fg_fullsize.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery .number-3 {
+    background-image: linear-gradient(transparent, transparent), url("C:/Users/Dmitry/OneDrive/Photos/stock/preview2.JPG");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery .number-4 {
+    background-image: linear-gradient(transparent, transparent), url("C:/Users/Dmitry/OneDrive/Photos/stock/5243a2eb2bc02_1.JPG");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery .number-5 {
+    background-image: linear-gradient(transparent, transparent), url("C:/Users/Dmitry/OneDrive/Photos/stock/BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery .number-6 {
+    background-image: linear-gradient(transparent, transparent), url("C:/Users/Dmitry/OneDrive/Photos/stock/JaI1BywIT5Or8Jfmci1E_zakopane.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery .number-7 {
+    background-image: linear-gradient(transparent, transparent), url("C:/Users/Dmitry/OneDrive/Photos/stock/kIlSDateSiyn420ZmgjA_IMG_3768.JPG");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery .number-8 {
+    background-image: linear-gradient(transparent, transparent), url("C:/Users/Dmitry/OneDrive/Photos/stock/photo-1418393781697-0215e2fd73e4-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery .number-9 {
+    background-image: linear-gradient(transparent, transparent), url("C:/Users/Dmitry/OneDrive/Photos/stock/SplitShire-8557.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.quote {
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 100vh;
+  background-color: white;
+  overflow: hidden;
+  padding: 20% 25%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box; }
+  .quote .avatar {
+    background-image: url("C:/Users/Dmitry/OneDrive/Documents/New folder/New folder (3)/p/tumblr_o8d97utUVl1s904tjo1_1280.jpg");
+    background-attachment: fixed;
+    background-position: 25% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    min-width: 400px;
+    min-height: 400px;
+    margin-right: 50px; }
+  .quote .text {
+    font-size: 1.2rem;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 300ms ease-in-out; }
+    .quote .text p {
+      text-indent: 50px;
+      text-align: justify;
+      color: #186860; }
+    .quote .text .name {
+      font-size: 2.8rem;
+      font-weight: bolder;
+      color: #a85913; }
+    .quote .text.is-shifted {
+      opacity: 1;
+      transform: translateX(0%); }
+
+footer {
+  background-color: #26A69A;
+  padding: 0px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column; }
+  footer .container {
+    max-width: 600px;
+    margin: auto;
+    flex-grow: 1; }
+    footer .container .thanks {
+      text-align: center;
+      margin-top: 100px; }
+      footer .container .thanks h2 {
+        color: #83e3da; }
+      footer .container .thanks h1 {
+        color: white;
+        font-weight: 300; }
+    footer .container form input[type='text'], footer .container form input[type='email'], footer .container form input[type='submit'], footer .container form textarea {
+      box-sizing: border-box;
+      font-family: Poppins;
+      width: 90%;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      border: none;
+      padding: 10px;
+      margin: 20px auto 0 auto;
+      display: block;
+      transition: all 150ms ease-in-out; }
+    footer .container form input[type='text'], footer .container form input[type='email'], footer .container form textarea {
+      outline: none;
+      background-color: #186860; }
+      footer .container form input[type='text']::-webkit-input-placeholder, footer .container form input[type='email']::-webkit-input-placeholder, footer .container form textarea::-webkit-input-placeholder {
+        color: #26A69A; }
+      footer .container form input[type='text']:focus, footer .container form input[type='email']:focus, footer .container form textarea:focus {
+        background-color: white; }
+    footer .container form input[name='Your message'] {
+      height: 200px; }
+    footer .container form input[type='submit'] {
+      background-color: #e67e22;
+      color: white;
+      box-shadow: 0 10px 0 #a85913; }
+      footer .container form input[type='submit']:hover {
+        transform: translateY(5px);
+        box-shadow: 0 5px 0 #a85913; }
+      footer .container form input[type='submit']:active {
+        transform: translateY(10px);
+        box-shadow: 0 0px 0 #a85913; }
+  footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; }
+    footer .social .icon {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin: 0 10px;
+      position: relative;
+      transition: all 150ms ease-in-out; }
+      footer .social .icon svg {
+        width: 80px;
+        height: 80px;
+        fill: #186860;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    footer .social .twitter:hover {
+      background-color: #1da1f2; }
+    footer .social .facebook:hover {
+      background-color: #3b5998; }
+    footer .social .vk:hover {
+      background-color: #45668e; }
+    footer .social .instagram:hover {
+      background-color: #f56040; }
+  footer .copyright {
+    background-color: #186860;
+    width: 100%;
+    height: 80px; }
+    footer .copyright p {
+      color: #26A69A;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 80px;
+      margin: 0; }
+
+@media all and (max-width: 1280px) {
+  .original {
+    width: 65%; } }
+@media all and (max-width: 1080px) {
+  .original {
+    display: none; }
+
+  .quote {
+    flex-direction: column; }
+
+  .answers {
+    flex-direction: column;
+    align-items: center; }
+
+  .awesomeness {
+    height: 100vh; } }
+
+/*# sourceMappingURL=template.css.map */

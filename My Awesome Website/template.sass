@@ -1,0 +1,347 @@
+@import "C:/Users/Dmitry/Desktop/web/SASS snippets/flat colors"
+@import "C:/Users/Dmitry/Desktop/web/SASS snippets/mixins"
+
+//$main_color: #607D8B
+$main_color: #26A69A
+$main_color_dark: darken($main_color, 15%)
+$main_color_light: lighten($main_color, 30%)
+$secondary_color: $flat_carrot
+$secondary_color_dark: darken($secondary_color, 15%)
+
+body
+  margin: 0px
+  padding: 0px
+
+  font-family: Poppins
+
+//header ??menu bar height
+.parralax-background
+  background-image: linear-gradient(rgba(black, .3), rgba(black, .3)),url('C:/Users/Dmitry/OneDrive/Photos/stock/photo-1416431168657-a6c4184348ab small.jpg')
+  background-attachment: fixed
+  background-size: cover
+  position: relative
+  width: 100%
+  height: 100vh
+  color: white
+  padding: 0px
+
+.original
+  font-size: 1.5rem
+  position: fixed
+  width: 40%
+  top: 0
+  right: 0
+  z-index: 2
+  list-style-type: none
+  margin: 0 30px 0 0
+  padding: 0px
+  +flex(around)
+  a
+    text-decoration: none
+    color: white
+    li
+      position: relative
+      line-height: 80px
+      &::after
+        position: absolute
+        bottom: 25%
+        left: 50%
+        transform: translateX(-50%)
+        content: ''
+        height: 4px
+        background-color: white
+        width: 0
+        transition: all 300ms ease-in-out
+      &:hover
+        &::after
+          width: 100%
+
+
+.logo
+  position: absolute
+  text-align: center
+  left: 50%
+  top: 50%
+  transform: translateX(-50%)
+  margin-top: -50px
+  font-family: Raleway
+  font-size: 4rem
+  z-index: 1
+  height: 100px
+  line-height: 44px
+  padding: 20px
+  //background-color: pink
+  transition: left 300ms ease-in-out, font-size 300ms ease-in-out, line-height 300ms ease-in-out
+  box-sizing: border-box
+  border: 8px solid white
+  &.is-minimized
+    left: 15%
+    font-size: 2rem
+  &.in-menu
+    //transform: translate(-50%, 0%)
+    line-height: 80px
+    height: 80px
+    line-height: 24px
+    margin-top: 0
+    position: fixed
+    top: 0%
+
+
+.sticky
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  opacity: 0
+  background-color: $main_color
+  &.is-sticky
+    position: fixed
+    height: 80px
+    z-index: 1
+    box-shadow: 0 0 30px rgba(black, .4)
+
+
+.awesomeness
+  background-color: white
+  display: flex
+  flex-direction: column
+  height: 70vh
+  color: $main_color_dark
+  .question
+    text-align: center
+    flex-grow: 1
+    margin-top: 80px
+    h2
+      position: relative
+      font-size: 2.5rem
+      &::after
+        content: ''
+        width: 5%
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 0%
+        height: 3px
+        background-color: $main_color_light
+
+  .answers
+    display: flex
+    justify-content: center
+    flex-grow: 1
+    font-family: Lato
+    .answer
+      min-width: 300px
+      width: 300px
+      text-align: center
+      margin: 0 40px
+      font-size: 1.5rem
+      .material-icons
+        font-size: 48px
+        color: $secondary_color
+      // h4
+      //   font-weight: lighter
+      p
+        font-size: 1rem
+        letter-spacing: 1px
+        color: lighten($main_color, 10%)
+
+
+
+.gallery
+  display: flex
+  flex-wrap: wrap
+  height: 150vh
+  width: 100%
+  .picture
+    //flex-grow: 1
+    min-width: 33.33%
+    min-height: 33.33%
+    cursor: pointer
+    position: relative
+    text-align: center
+    .cover
+      +abs-pos(0,0,0,0)
+      background-color: rgba(black, 0)
+      transition: all 300ms ease-in-out
+    p
+      color: white
+      font-size: 2rem
+      display: block
+      opacity: 0
+      margin-top: 90%
+      transition: all 300ms ease-in-out
+    &:hover
+      .cover
+        background-color: rgba(black, .5)
+        p
+          opacity: 1
+          margin-top: 40%
+  .number-1
+    +background-stock('52af24879b3cb_1.JPG')
+  .number-2
+    +background-stock('HHEvkhEsQLaNDRkui4fg_fullsize.jpg')
+  .number-3
+    +background-stock('preview2.JPG')
+  .number-4
+    +background-stock('5243a2eb2bc02_1.JPG')
+  .number-5
+    +background-stock('BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg')
+  .number-6
+    +background-stock('JaI1BywIT5Or8Jfmci1E_zakopane.jpg')
+  .number-7
+    +background-stock('kIlSDateSiyn420ZmgjA_IMG_3768.JPG')
+  .number-8
+    +background-stock('photo-1418393781697-0215e2fd73e4-2.jpeg')
+  .number-9
+    +background-stock('SplitShire-8557.jpg')
+
+
+.quote
+
+  height: 100vh
+  width: 100%
+  margin-bottom: 100vh
+  background-color: white
+  overflow: hidden
+  padding: 20% 25%
+  display: flex
+  align-items: center
+  box-sizing: border-box
+  .avatar
+    background-image: url('C:/Users/Dmitry/OneDrive/Documents/New folder/New folder (3)/p/tumblr_o8d97utUVl1s904tjo1_1280.jpg')
+    background-attachment: fixed
+    background-position: 25% 100%
+
+    background-size: contain
+    background-repeat: no-repeat
+    +circle(400px)
+    min-width: 400px
+    min-height: 400px
+    margin-right: 50px
+  .text
+    font:
+      size: 1.2rem
+    transform: translateX(50%)
+    opacity: 0
+    transition: all 300ms ease-in-out
+    p
+      text-indent: 50px
+      text-align: justify
+      color: $main_color_dark
+    .name
+      font-size: 2.8rem
+      font-weight: bolder
+      color: $secondary_color_dark
+    &.is-shifted
+      opacity: 1
+      transform: translateX(0%)
+
+
+//footer ??incons` margin
+footer
+  background-color: $main_color
+  padding: 0px //???
+  height: 100vh
+  width: 100%
+  position: fixed
+  bottom: 0
+  z-index: -1
+  display: flex
+  flex-direction: column
+  .container
+    max-width: 600px
+    margin: auto
+    flex-grow: 1
+    .thanks
+      text-align: center
+      margin-top: 100px
+      h2
+        color: $main_color_light
+      h1
+        color: white
+        font-weight: 300
+    form
+
+      input[type='text'], input[type='email'], input[type='submit'], textarea
+        box-sizing: border-box
+        font-family: Poppins
+        width: 90%
+        font-size: 1.5rem
+        border-radius: 5px
+        border: none
+        padding: 10px
+        margin: 20px auto 0 auto
+        display: block
+        transition: all 150ms ease-in-out
+      input[type='text'], input[type='email'], textarea
+        outline: none
+        background-color: $main_color_dark
+        &::-webkit-input-placeholder
+          color: $main_color
+        &:focus
+          background-color: white
+      input[name='Your message']
+        height: 200px
+      input[type='submit']
+
+        background-color: $secondary_color
+        color: white
+        box-shadow: 0 10px 0 $secondary_color_dark
+        &:hover
+          transform: translateY(5px)
+          box-shadow: 0 5px 0 $secondary_color_dark
+        &:active
+          transform: translateY(10px)
+          box-shadow: 0 0px 0 $secondary_color_dark
+  .social
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-grow: 1 //?
+    .icon
+      +circle(130px)
+      margin: 0 10px
+      position: relative
+      transition: all 150ms ease-in-out
+      svg
+        width: 80px
+        height: 80px
+        fill: $main_color_dark
+        +abs-center
+    .twitter:hover
+      background-color: #1da1f2
+    .facebook:hover
+      background-color: #3b5998
+    .vk:hover
+      background-color: #45668e
+    .instagram:hover
+      background-color: #f56040
+  .copyright
+    background-color: $main_color_dark
+    width: 100%
+    height: 80px
+    p
+      color: $main_color
+      text-align: center
+      font:
+        size: 2rem
+      line-height: 80px
+      margin: 0
+
+
+
+//MOBILE
+@media all and (max-width: 1280px)
+  .original
+    width: 65%
+@media all and (max-width: 1080px)
+  .original
+    display: none
+  .quote
+    flex-direction: column
+  .answers
+    flex-direction: column
+    align-items: center
+  .awesomeness
+    height: 100vh
